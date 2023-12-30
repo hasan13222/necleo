@@ -21,7 +21,7 @@ const SingleProject = ({ project }) => {
             confirmButtonText: "Confirm",
           }).then((result) => {
             if (result.isConfirmed) {
-                axios.delete(`http://localhost:5000/projects/${project._id}`).then((data) => {
+                axios.delete(`https://seequenze-server.vercel.app/projects/${project._id}`).then((data) => {
                     if (data.data) {
                       queryClient.invalidateQueries({ queryKey: ["projects"] });
                       Swal.fire({

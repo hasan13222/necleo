@@ -13,7 +13,7 @@ const Body = () => {
     queryKey: ["projects"],
     queryFn: () =>
       fetch(
-        `http://localhost:5000/projects`
+        `https://seequenze-server.vercel.app/projects`
       ).then((res) => res.json()),
   });
 

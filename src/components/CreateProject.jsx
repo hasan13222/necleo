@@ -21,7 +21,7 @@ const CreateProject = () => {
         thumbnail
     }
 
-    axios.post("http://localhost:5000/projects", newProject)
+    axios.post("https://seequenze-server.vercel.app/projects", newProject)
       .then((data) => {
         if (data.data) {
           queryClient.invalidateQueries({ queryKey: ["projects"] });

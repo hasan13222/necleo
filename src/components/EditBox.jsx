@@ -21,7 +21,7 @@ const EditBox = ({ project, reference }) => {
       thumbnail,
     };
 
-    axios.patch(`http://localhost:5000/projects/${project._id}`, updateProject).then((data) => {
+    axios.patch(`https://seequenze-server.vercel.app/projects/${project._id}`, updateProject).then((data) => {
       if (data.data) {
         queryClient.invalidateQueries({ queryKey: ["projects"] });
         notify();
@@ -39,7 +39,7 @@ const EditBox = ({ project, reference }) => {
               ✕
             </button>
           </form>
-          
+
           {/* form to edit project */}
           <form
             className="flex mx-auto justify-center flex-col gap-2 px-5"
