@@ -5,11 +5,13 @@ const TopBar = () => {
   return (
     <>
         <div className="container mx-auto topbar">
+          {/* logo section */}
         <div className="logo__wrapper">
           <a href="/">
             <img src={logo} alt="logo" />
           </a>
         </div>
+        {/* right side section of topbar */}
         <div className="trial__wrapper flex">
           <div className="trial">
             <div className="trial__free">

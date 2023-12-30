@@ -28,9 +28,11 @@ const Body = () => {
           )}
           {projects?.map((project) => (
             <Fragment key={project._id}>
+              {/* created projects will be rendered here */}
               <SingleProject project={project} />
             </Fragment>
           ))}
+          {/* from create project user can create new project */}
           <CreateProject/>
         </div>
       </div>

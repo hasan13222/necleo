@@ -7,6 +7,7 @@ const EditBox = ({ project, reference }) => {
   const notify = () => toast("Project Updated Successfully");
   const queryClient = useQueryClient();
 
+  // project editing handler
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -38,6 +39,8 @@ const EditBox = ({ project, reference }) => {
               ✕
             </button>
           </form>
+          
+          {/* form to edit project */}
           <form
             className="flex mx-auto justify-center flex-col gap-2 px-5"
             onSubmit={handleSubmit}

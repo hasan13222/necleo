@@ -35,6 +35,7 @@ const CreateProject = () => {
     <>    
         
     <ToastContainer />
+      {/* create project box */}
       <div
         onClick={() => document.getElementById("addProject_modal").showModal()}
         className="item cursor-pointer bg-white p-2 mb-4 rounded-md"

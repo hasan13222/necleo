@@ -9,6 +9,7 @@ const ViewBox = ({project}) => {
               ✕
             </button>
           </form>
+          {/* project details */}
           <div className="project_details mt-1 py-4 text-center">
             <div className="img_wrapper">
                 <img className="max-h-52 w-full object-contain rounded-lg" src={project.thumbnail} alt="thumbnail" />

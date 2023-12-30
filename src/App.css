@@ -1,6 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&display=swap");
-body{
-  font-family: 'Oxygen', sans-serif;
+body {
+  font-family: "Oxygen", sans-serif;
 }
 .topbar {
   padding: 1.2rem;
@@ -11,28 +11,39 @@ body{
 .topbar .trial__wrapper h3 span {
   font-size: 10px;
 }
-.topbar .trial__wrapper .trial .trial__extend a{
+.topbar .trial__wrapper .trial .trial__extend a {
   font-size: 10px;
 }
 .trial__wrapper > div {
   padding-left: 1rem;
 }
-.orange{
+.orange {
   color: rgba(250, 120, 47, 1);
 }
-.leftbar_body .leftbar{
+.leftbar_body .leftbar {
   height: calc(100vh - 85px);
   min-height: 520px;
   min-width: 220px;
   overflow: auto;
+  transition: all 1s ease-in-out;
 }
-.leftbar_body .body{
+
+.leftbar_body .leftbar.collapsed__leftbar {
+  position: absolute;
+  left: -100%;
+}
+.leftbar_body .body {
   background-color: rgba(248, 248, 248, 1);
   overflow: auto;
   min-width: calc(100vw - 220px);
   height: calc(100vh - 85px);
   min-height: 520px;
 }
-.leftbar_body .body .item{
+.leftbar_body .body .item {
   max-width: 300px;
+}
+.expand__btn {
+  position: absolute;
+  bottom: 2rem;
+  left: -4px;
 }

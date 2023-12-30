@@ -41,6 +41,7 @@ const SingleProject = ({ project }) => {
     }
   return (
     <>
+      {/* single project item */}
       <div onClick={() => document.getElementById(`view__${project._id}`).showModal()} className="item mr-4 mb-4 cursor-pointer bg-white p-2 rounded-md">
         <div className="img_wrapper p-3">
           <img src={project.thumbnail} alt="project thumbnail" />
