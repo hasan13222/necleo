@@ -1,6 +1,8 @@
 # Neclio
+## [Live Link](https://jazzy-babka-283025.netlify.app)
 
-This project provides a nice way to manage a user projects.
+This project provides a nice way to manage a user projects. At backend of the project mongodb used with nodejs, expressjs.
+You don't need to do anything at backend to run this project.
 
 How a user can use this dashboard:
 
