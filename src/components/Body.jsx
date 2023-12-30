@@ -20,9 +20,9 @@ const Body = () => {
   return (
     <>
       <div className="body p-5 px-10">
-        <h2 className="font-bold text-3xl mb-6">My Projects</h2>
+        <h2 className="font-bold text-3xl mb-6 text-center md:text-left">My Projects</h2>
           {error && <h3>{error.message} Please refresh again.</h3>}
-        <div className="items flex flex-wrap">
+        <div className="items flex flex-wrap justify-center md:justify-normal">
           {isLoading && isFetching && (
             <span className="loading loading-ring loading-lg"></span>
           )}

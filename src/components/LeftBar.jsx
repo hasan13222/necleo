@@ -1,9 +1,7 @@
-import { useState } from "react";
 import images from "../assets";
 import { FaArrowRightLong } from "react-icons/fa6";
 
-const LeftBar = () => {
-  const [collapseLeftBar, setCollapseLeftBar] = useState(false);
+const LeftBar = ({collapseLeftBar, setCollapseLeftBar}) => {
   return (
     <>
       <div
@@ -57,7 +55,7 @@ const LeftBar = () => {
               <span className="text-sm">Feedback</span>
             </a>
           </div>
-          <div className="item py-1">
+          <div className="item py-1 hidden md:block">
             <div
               onClick={() => setCollapseLeftBar(true)}
               className="flex items-center cursor-pointer"
@@ -72,7 +70,7 @@ const LeftBar = () => {
       {collapseLeftBar && (
         <button
           onClick={() => setCollapseLeftBar(false)}
-          className="btn bg-orange-400 expand__btn text-white"
+          className="btn bg-orange-400 expand__btn text-white invisible md:visible"
         >
           <FaArrowRightLong />
         </button>

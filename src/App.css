@@ -25,7 +25,7 @@ body {
   min-height: 520px;
   min-width: 220px;
   overflow: auto;
-  transition: all 1s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .leftbar_body .leftbar.collapsed__leftbar {
@@ -46,4 +46,16 @@ body {
   position: absolute;
   bottom: 2rem;
   left: -4px;
+}
+@media only screen and (max-width: 768px) {
+  .leftbar_body .leftbar {
+    position: absolute;
+    left: -100%;
+    z-index: 10;
+    background-color: #fff;
+  }
+  .leftbar_body .leftbar.collapsed__leftbar {
+    position: absolute;
+    left: 0;
+  }
 }
