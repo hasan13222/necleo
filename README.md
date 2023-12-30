@@ -1,8 +1,11 @@
-# React + Vite
+# Neclio
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This project provides a nice way to manage a user projects.
 
-Currently, two official plugins are available:
+How a user can use this dashboard:
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- User can view his/her all projects from My Projects section
+- User can add new project by clicking Create new project box
+- User can view the details of a project by clicking on the project or clicking view button
+- User can edit any of the projects by clicking edit button
+- User can delete any of the projects by clicking delete button
